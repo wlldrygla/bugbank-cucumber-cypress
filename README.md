@@ -7,7 +7,8 @@ I started this project to pratice my Cypress habilities, and learn how to use cu
 - I am using a site that is made for tests
 - I don't used typescript because ins't the focus
 - I don't enjoy using the BDD with cypress this way
-- I thing that working with work flows and context will be much simples
+- I thing that working with work flows and context will be much simple
+  # Now, I decided to remove cucumber and transform this into my automation portfolio
 
 ## How to run
 
