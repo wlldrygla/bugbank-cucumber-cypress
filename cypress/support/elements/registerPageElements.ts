@@ -1,16 +1,18 @@
 class RegisterPageElements {
 	emailInput = () => {
-		return 'input[type="email"][name="email"][class="input__default"]';
+		return 'input[name="email"]';
 	};
-
+	nameInput = () => {
+		return 'input[name="name"]';
+	};
 	passwordInput = () => {
-		return 'input[type="password"][name="password"]';
+		return 'input[name="password"]';
 	};
 	confirmPasswordInput = () => {
 		return 'input[type="password"][name="passwordConfirmation"]';
 	};
 	submitButton = () => {
-		return 'input[type="submit"]';
+		return 'button[type="submit"]';
 	};
 }
 

@@ -11,9 +11,11 @@ describe('e2e testing registry on BugBank', () => {
 	it('should fill the form correctly and save', () => {
 		initialPage.acessRegisterPage();
 		registerPage.fillEmail('willian.cardoso@gmail.com');
+		registerPage.fillName('Willian Drygla');
+
 		registerPage.fillPassword('Senha123@');
 		registerPage.fillConfirmationPassword('Senha123@');
 		registerPage.submit();
-
-	});
+		// cy.get('#modalText').click();
+		cy.get('#modalText').should('contain', 'criada com sucesso');	});
 });
