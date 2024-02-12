@@ -1,4 +1,4 @@
-import RegisterPageElements from "../elements/registerPageElements";
+import RegisterPageElements from '../elements/registerPageElements';
 
 const registerPageElements = new RegisterPageElements();
 
