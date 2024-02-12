@@ -8,18 +8,28 @@ const registerPageElements = new RegisterPageElements();
  */
 export default class RegisterPage {
 	fillEmail = (email) => {
-		cy.get(registerPageElements.emailInput()).last().type(email, {force: true});
+		cy.get(registerPageElements.emailInput())
+			.last()
+			.type(email, { force: true });
 	};
 	fillName = (name) => {
-		cy.get(registerPageElements.nameInput()).last().type(name, {force: true});
+		cy.get(registerPageElements.nameInput()).last().type(name, { force: true });
 	};
 	fillPassword = (password) => {
-		cy.get(registerPageElements.passwordInput()).last().type(password, {force: true});
+		cy.get(registerPageElements.passwordInput())
+			.last()
+			.type(password, { force: true });
 	};
 	fillConfirmationPassword = (password) => {
-		cy.get(registerPageElements.confirmPasswordInput()).first().type(password, {force: true});
+		cy.get(registerPageElements.confirmPasswordInput())
+			.first()
+			.type(password, { force: true });
+	};
+
+	toggleBalance = () => {
+		cy.get(registerPageElements.addBalanceSwitch()).click({ force: true });
 	};
 	submit = () => {
-		cy.get(registerPageElements.submitButton()).last().click({force:true});
+		cy.get(registerPageElements.submitButton()).last().click({ force: true });
 	};
 }

@@ -14,6 +14,10 @@ class RegisterPageElements {
 	submitButton = () => {
 		return 'button[type="submit"]';
 	};
+
+	addBalanceSwitch = () => {
+		return '#toggleAddBalance';
+	};
 }
 
 export default RegisterPageElements;
