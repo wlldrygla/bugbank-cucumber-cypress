@@ -1,11 +1,14 @@
-import InitialPage from '../../pageobjects/loginPage';
+import InitialPageElements from '../../elements/loginPageElements';
 
-const initialPage = new InitialPage();
+const initialPageElements = new InitialPageElements();
 
 Cypress.Commands.add('fillLoginForm', (email: string, password: string) => {
-	initialPage.fillLoginForm(email, password);
+	cy.get(initialPageElements.emailInput()).first().type(email, { force: true });
+	cy.get(initialPageElements.passwordInput())
+		.first()
+		.type(password, { force: true });
 });
 
 Cypress.Commands.add('submitLoginForm', () => {
-	initialPage.submitLoginForm();
+	cy.get(initialPageElements.submitButton()).first().click({ force: true });
 });
