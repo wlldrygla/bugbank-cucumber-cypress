@@ -12,7 +12,9 @@
   "scripts": {
     "test": "cypress run",
     "test:open": "cypress open",
-    "lint:cy": "eslint cypress/",
+    "lint": "eslint cypress/",
+    "lint:fix": "eslint cypress/ --fix",
+
     "prepare": "husky"
   },
   "cypress-cucumber-preprocessor": {

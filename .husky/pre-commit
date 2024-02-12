@@ -1,1 +1,2 @@
-npm run lint:cy
+npm run lint:fix
+

@@ -4,7 +4,7 @@ const registerPageElements = new RegisterPageElements();
 
 export default class RegisterPage {
 	fillEmail = (email) => {
-		cy.get(registerPageElements.emailInput()).type(email);
+		cy.get(registerPageElements.emailInput()).last().type(email);
 	};
 	fillPassword = (password) => {
 		cy.get(registerPageElements.passwordInput()).type(password);
