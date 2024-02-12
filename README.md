@@ -1,20 +1,35 @@
-# Bugbank e2e Tests
-## Using Cypress with cucumber to automated testes
+# Cypress Automation 
+
+## Description
+This project demonstrates my automation skills using Cypress with TypeScript, to support the project, I use ESLint, and Husky. The project's goal is to apply my theoretical knowledge, implement best practices, and gain a better understanding of test automation.
+
+## Installation
+1. Clone the repository.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+To run Cypress tests in headless mode:
+```bash
+npm test 
+```
 
 
+## Usage - Open the Cypress in GUI
+To run Cypress tests in UI mode:
+```bash
+npm run test:open
+```
 
-I started this project to pratice my Cypress habilities, and learn how to use cucumber (to write BDD tests)
-- I am using a site that is made for tests
-- I don't used typescript because ins't the focus
-- I don't enjoy using the BDD with cypress this way
-- I thing that working with work flows and context will be much simple
-  # Now, I decided to remove cucumber and transform this into my automation portfolio
-
-## How to run
-
-- install the dependencies with 'npm install'
-- run 'npm run test'
-
-## The only test that exists, isn't working:
-> -  I don't now if the problem is in the website, or in me selector, but, Cypress says that are two elements 'input - email'
+## Usage ESLint
+To run the ESLint:
+```bash
+npm run lint
+```
+To run the ESLint and fix errors:
+```bash
+npm run lint:fix
+```
 
