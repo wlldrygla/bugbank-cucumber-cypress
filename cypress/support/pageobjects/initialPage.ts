@@ -1,7 +1,6 @@
-import InitialPageElements from "../elements/initialPageElements";
+import InitialPageElements from '../elements/initialPageElements';
 
 const initialPageElements = new InitialPageElements();
-const baseUrl = Cypress.config("baseUrl");
 
 export default class InitialPage {
 	acessRegisterPage() {
@@ -9,6 +8,6 @@ export default class InitialPage {
 	}
 
 	validateModalText(text) {
-		cy.get(initialPageElements.modalText()).should("contain", text);
+		cy.get(initialPageElements.modalText()).should('contain', text);
 	}
 }
