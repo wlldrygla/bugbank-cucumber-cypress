@@ -6,4 +6,15 @@ export default class InitialPageElements {
 	modalText = () => {
 		return 'p#modalText';
 	};
+
+	emailInput = () => {
+		return 'input[name="email"]';
+	};
+
+	passwordInput = () => {
+		return 'input[name="password"]';
+	};
+	submitButton = () => {
+		return 'button[type="submit"]';
+	};
 }

@@ -1,4 +1,4 @@
-import InitialPage from '../../pageobjects/initialPage';
+import InitialPage from '../../pageobjects/loginPage';
 import RegisterPage from '../../pageobjects/registerPage';
 import FormBasics from '../../types/form';
 
