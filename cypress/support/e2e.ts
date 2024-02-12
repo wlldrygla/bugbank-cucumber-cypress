@@ -1,5 +1,5 @@
-import './commands/register/workFlow';
-import './commands/login/workFlow';
-import './commands/transfer/workFlow';
-import './commands/actions/workFlow';
-import './commands/bankStatement/workFlow';
+import './commands/register/registerWorkFlow';
+import './commands/login/loginWorkFlow';
+import './commands/transfer/transferWorkFlow';
+import './commands/actions/actionsWorkFlow';
+import './commands/bankStatement/bankStatementWorkFlow';
