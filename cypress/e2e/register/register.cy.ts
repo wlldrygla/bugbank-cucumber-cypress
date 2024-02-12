@@ -16,6 +16,5 @@ describe('e2e testing registry on BugBank', () => {
 		registerPage.fillPassword('Senha123@');
 		registerPage.fillConfirmationPassword('Senha123@');
 		registerPage.submit();
-		// cy.get('#modalText').click();
 		cy.get('#modalText').should('contain', 'criada com sucesso');	});
 });
