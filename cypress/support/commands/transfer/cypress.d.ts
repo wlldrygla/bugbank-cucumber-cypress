@@ -1,5 +1,14 @@
 /// <reference types="cypress" />
 
 declare namespace Cypress {
-	interface Chainable {}
+	interface Chainable {
+		fillTransferMoneyForm(
+			accountNumber,
+			AccountDigit,
+			value,
+			description?
+		): Chainable<void>;
+
+		submitTransfer(): Chainable<void>;
+	}
 }
